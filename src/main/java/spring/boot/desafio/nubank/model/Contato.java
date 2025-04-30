@@ -22,7 +22,7 @@ public class Contato {
     private String email;
 
     @ManyToOne
-    @JoinTable(name = "cliente_id")
+    @JoinColumn(name = "cliente_id")
     @JsonBackReference
     private Clientes clientes;
 }
