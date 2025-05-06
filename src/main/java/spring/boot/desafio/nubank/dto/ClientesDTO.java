@@ -13,7 +13,7 @@ import java.util.List;
 @Getter
 @Setter
 
-public class CleintesDTO {
+public class ClientesDTO {
 
     private String nome;
     private List<ContatoDTO> contatos;
