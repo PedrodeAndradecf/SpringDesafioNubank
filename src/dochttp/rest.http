@@ -1,0 +1,36 @@
+### Insere um cliente
+
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+{
+  "nome": "Matheus",
+  "contatos" : [
+    {
+      "telefone" : "48123",
+      "email" : "testandoemail@gmail.com"
+    },
+
+    {
+      "telefone" : "58123",
+      "email" : "retestandoemail@gmail.com"
+    }
+  ]
+}
+
+
+### Inserir um cliente sem contato
+
+POST http://localhost:8080/clientes
+Content-Type: application/json
+
+{
+  "nome" : "Bruno"
+}
+
+
+### Inserir um contato para o cliente
+
+POST http://localhost:8080/contatos
+Content-Type: application/json
+
